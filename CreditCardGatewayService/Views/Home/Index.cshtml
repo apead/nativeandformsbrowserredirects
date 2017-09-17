@@ -1,0 +1,21 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<script type="text/javascript">
+    $(document).ready(function () {
+
+    })
+</script>
+
+<div class="jumbotron">
+    <p class="lead">Web based Credit Card Submisson Simulator</p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <p>        <a class="btn btn-primary btn-lg" href="@Url.Action("CardProcess", "Home", new { operation = "sucessprocess" })">Succesful Credit Card Submission </a> </p>
+        <p>        <a class="btn btn-primary btn-lg" href="@Url.Action("CardProcess", "Home", new { operation = "failedprocess" })">Declined Credit Card Submission </a> </p>
+    
+    </div>
+</div>
